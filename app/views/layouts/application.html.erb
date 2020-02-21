@@ -19,8 +19,8 @@
       </section>
     </nav>
     <h5>Search for a Book</h5>
-    <section class="form-wrapper"
-      <%= form_tag(search_path, method: "get") do %>
+    <section class="form-wrapper">
+      <%= form_tag('/search', method: "get") do %>
         <div class="col-md-3 my-1">
           <div class="input-group">
             <%= text_field_tag(:title, nil, class:"form-control", placeholder: "Enter Book Title") %>
