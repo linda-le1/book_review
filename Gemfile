@@ -14,6 +14,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap', '~> 4.4.1'
 gem 'jquery-rails'
 gem 'faraday'
+gem 'figaro'
 
 group :development, :test do
   gem 'pry'

@@ -14,8 +14,8 @@ describe 'as a user' do
         expect(page).to have_content('Genre: N/A')
 
         expect(page).to have_content('Review Count: 2')
-        expect(page).to have_content("The Man Who Saw Everything,” which was longlisted for the Booker Prize, looks at masculinity through the perspective of a young historian who sneers at “authoritarian old men.")
-        expect(page).to have_content("Deborah Levy’s latest novel, “The Man Who Saw Everything,” experiments with time travel, history and the endless complications of love.")
+        expect(page).to have_content("Summary: “The Man Who Saw Everything,” which was longlisted for the Booker Prize, looks at masculinity through the perspective of a young historian who sneers at “authoritarian old men.”")
+        expect(page).to have_content("Summary: Deborah Levy’s latest novel, “The Man Who Saw Everything,” experiments with time travel, history and the endless complications of love.")
         expect(page).to have_content("Review Publication Date: 2019-10-09")
         expect(page).to have_content("Review Publication Date: 2019-10-15")
 

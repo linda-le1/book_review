@@ -2,3 +2,8 @@
 <p>Title: <%= @book.title %></br>
 Author: <%= @book.author %></br>
 Genre: <%= @book.genre %></p>
+Review Count: <%= @reviews.count %>
+<% @reviews.each do |review| %>
+Summary: <%= review.summary %></br>
+Review Publication Date: <%= review.publication_date %>
+<%end%>
