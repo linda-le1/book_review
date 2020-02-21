@@ -7,7 +7,7 @@ describe 'as a user' do
         fill_in :title, with: 'the man who saw everything'
         click_button 'Find Book'
 
-        expect(current_path).to be eql('/search')
+        expect(current_path).to eql(search_path)
 
         expect(page).to have_content('Title: The Man Who Saw Everything')
         expect(page).to have_content('Author: Deborah Levy')
