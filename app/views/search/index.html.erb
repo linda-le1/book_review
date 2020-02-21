@@ -1,9 +1,9 @@
 <h1> Search Results </h1>
-<p>Title: <%= search_results.book.title %></br>
-Author: <%= search_results.book.author %></br>
-Genre: <%= search_results.book.genre %></p>
-Review Count: <%= search_results.count_reviews %>
+<h3>Title: <%= search_results.book.title %></h3>
+<h3>Author: <%= search_results.book.author %></h3>
+<h3>Genre: <%= search_results.book.genre %></h3>
+<h3>Review Count: <%= search_results.count_reviews %></h3>
 <% search_results.reviews.each do |review| %>
-Summary: <%= review.summary %></br>
-Review Publication Date: <%= review.publication_date %>
+<b>Summary:</b> <%= review.summary %></br>
+<b>Review Publication Date:</b> <%= review.publication_date %></br>
 <%end%>
